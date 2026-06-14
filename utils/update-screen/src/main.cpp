@@ -31,13 +31,13 @@ static SP<CButtonElement> donateButton, openNewsButton;
 
 constexpr const char*     TEXT_CONTENT = R"#(Hyprland has been updated! 😄
 
-Please check the release notes, which can be found on GitHub, as well as the news page on hypr.land.
+Check out the release notes on GitHub and the news page on hypr.land to see what's new.
 
-Every release may come with breaking changes, so if you get any config errors, try checking the latest release notes.
+Some releases include breaking changes, so if you run into any config errors, the latest release notes are a good place to start.
 
-If you are using plugins, you will need to rebuild them.
+If you use plugins, make sure to rebuild them.
 
-<i>You can disable this screen in your Hyprland config.</i>)#";
+<i>You can turn off this screen in your Hyprland config.</i>)#";
 
 //
 int main(int argc, char** argv, char** envp) {
