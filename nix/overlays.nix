@@ -27,6 +27,9 @@ in
   ];
 
   hyprland-guiutils = final: prev: {
+    hyprgraphics = prev.hyprgraphics.overrideAttrs (old: {
+      propagatedBuildInputs = (old.propagatedBuildInputs or [ ]) ++ [ final.pango ];
+    });
     hyprland-guiutils = final.callPackage ./. {
       stdenv = final.gcc15Stdenv;
       version = "${version}+date=${date}_${self.shortRev or "dirty"}";
