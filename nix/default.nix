@@ -6,6 +6,7 @@
   aquamarine,
   cairo,
   hyprgraphics,
+  pango,
   hyprlang,
   hyprtoolkit,
   hyprutils,
@@ -43,6 +44,7 @@ stdenv.mkDerivation {
     hyprgraphics
     hyprlang
     hyprtoolkit
+    pango
     hyprutils
     libdrm
     libxkbcommon
